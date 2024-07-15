@@ -47,6 +47,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://phonebook-react-s3.s3-website-ap-southeast-2.amazonaws.com'
 ]
 
+ALLOWED_HOSTS=[
+    '13.211.222.77'
+]
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
