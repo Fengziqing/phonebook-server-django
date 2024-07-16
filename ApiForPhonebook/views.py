@@ -28,7 +28,7 @@ def PeopleApi(request,requestId=0):
         people_serializer = PeopleSerializer(people, data=people_data)
         if people_serializer.is_valid():
             people_serializer.save()
-            return JsonResponse("Updated Successfully!!", safe=False)
+            return JsonResponse(people_serializer.data, safe=False)
         return JsonResponse("Failed to Update.", safe=False)
     elif request.method == 'DELETE':
         people = People.objects.get(id=requestId)
