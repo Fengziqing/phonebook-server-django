@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 #allow all domain to access
 CORS_ALLOWED_ORIGINS = [
     'http://phonebook-react-s3.s3-website-ap-southeast-2.amazonaws.com',
-    'https://ziqingfeng.vercel.app/demo/phonebook'
+    'https://ziqingfeng.vercel.app'
 ]
 
 ALLOWED_HOSTS=[
